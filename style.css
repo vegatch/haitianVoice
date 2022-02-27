@@ -1,0 +1,150 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline; 
+    box-sizing: border-box;
+}
+
+.headBanner{
+    display: flex;
+    justify-content: right;
+    background-color: aquamarine;
+    
+    
+}
+
+.headNav{
+    padding-right: 2vw;
+}
+.headNav{
+    height: 3vh;  
+    top: 0px;
+    right: 0px;
+}
+
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+    display: inline-block; /* remove extra space below image */
+    
+}
+
+
+.pubContainer, .pub {
+    height: 20vh;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.pub{
+    border-color: bisque;
+    width: 80%;
+    height: 80%;
+    background-color: blue;
+    border-style: groove;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    height: 8vh;
+    background: paleturquoise;    
+}
+
+.navElement{    
+    list-style: none;
+    color: black;
+   /* text-align: center;  */
+    padding: 14px;
+    text-decoration: none;  
+    margin: 0;
+    padding: 0;
+     
+
+}
+
+.navFirst {
+    padding-left: 2vw;
+}
+
+.navSecond{
+    padding-right: 2vw;
+}
+
+
+.navSecond{
+    margin-left: auto;  
+    
+
+}
+
+
+li{
+    display: inline;
+    
+}
+
+
+.mainWrap{
+    display: flex;
+    justify-content: center;
+    padding-top: 2vh;
+}
+
+.gridContainer{    
+    display: grid;
+    display: -ms-grid;
+    width: 80vw;
+    grid-template-columns: repeat(4, 1fr);
+    -ms-grid-column: repeat(3, 1fr);
+    grid-template-rows: 30vh 30vh;
+    -ms-grid-row: 30vh 30vh;
+    grid-gap: 1vw;
+    
+}
+
+.gridElement{
+    background-color: antiquewhite;
+    border: 1px solid black;
+/* adding text over images */
+    position: relative;
+    max-width: 100%; /* Maximum width */        
+
+}
+
+.gridMain{
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.gridMain img {vertical-align: middle;}
+
+.gridMain .imgCaption {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  }
+
+.gridMain{
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+    background-color: blue;
+}
+
+.imgNews{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
