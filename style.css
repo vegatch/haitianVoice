@@ -90,10 +90,10 @@ header .nav-element{
     font-size: 1.2rem;
 }
 
-.left-nav{   
-    font-size: 1.7rem;
+#left-nav{   
+    font-size: 1.8rem;
     font-weight: bolder;
-    letter-spacing: .3rem;
+    letter-spacing: .4rem;
 }
 
 .nav-element:hover{
@@ -101,31 +101,8 @@ header .nav-element{
     color: white;
     
 }
-/*
-.navSecond{
-    padding-right: 2vw;
-    
-}
 
 
-.navSecond{
-    margin-left: auto;    
-     
-
-}
-
-
-.liElement,  a {
-    display: inline;
-    padding-left: 1vw;
-    text-decoration: none;
-    height: inherit;
-    background-color: antiquewhite;
-    height: 100%;
-    
-    
-}
-*/
 
 .liElement a:hover{
     background-color: #111;
@@ -197,4 +174,34 @@ header .nav-element{
     object-fit: cover;
     height: 100%;
     width: 100%;
+}
+
+.body-container{
+    display: flex;
+    justify-content: center;
+}
+
+.News-list{
+    margin-top: 1rem;
+    width: 80vw;
+    display: flex;
+    column-gap: 10px;
+}
+
+.child{
+    
+        height: 60 vh;
+        background: yellow;
+        text-align: default;
+        box-sizing: border-box;
+        border: 1px solid red;
+        padding:2rem;
+}
+
+#news-feed{
+    width: 84%;
+}
+
+#haitian-voice{
+    width: 26%;
 }

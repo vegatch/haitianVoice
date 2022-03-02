@@ -1,14 +1,4 @@
 
-/*
-let newsElement = function() {
-    const node = document.createElement("li");
-    const textNode = document.createTextNode("My news")
-    node.appendChild(textNode);
-    document.getElementById("news-list").appendChild(node);
-}
-*/
-
-
 fetch('news.json')
             .then(function (response) {
                 return response.json();
@@ -21,22 +11,25 @@ fetch('news.json')
             });
 // my new code
     let appendData = function(data){
-        let myTitle = document.getElementById("news-feed");
-        let  myBody = document.getElementById("news-body");
+       // let myTitle = document.getElementById("news-feed");
+        //let  myBody = document.getElementById("news-body");
+        let articleNews = document.getElementById("news-feed");
         for(let i = 0; i < data.length; i++){
-            let ul = document.createElement("ul");
-            let li = document.createElement("li");
-            ul.innerHTML = data[i].firstName;            
-            li.innerHTML = data[i].lastName;
+            let p = document.createElement("p");
+            //let li = document.createElement("li");
+            //ul.innerHTML = data[i].firstName;            
+            //li.innerHTML = data[i].lastName;
+
+            p.innerHTML = '<br>'+data[i].firstName +'<br>'+ data[i].lastName 
             
             
 
             //li.insertAdjacentText('afterend', data[i].lastName);
             //div.insertBefore(data[i].lastName, data[i].lastName);
-           // myTitle.appendChild(ul);
+            //myTitle.appendChild(ul);
             //myBody.appendChild(li);
 
-            myTitle.appendChild(myBody);
+            articleNews.appendChild(p);
             
            // myTitle.appendChild(ul).insertBefore(myBody.appendChild(li));
 
