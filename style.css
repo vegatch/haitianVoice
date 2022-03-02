@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 * {
     margin: 0;
@@ -7,36 +8,47 @@
     font: inherit;
     vertical-align: baseline; 
     box-sizing: border-box;
+    font-family: 'Roboto', Courier, monospace;
 }
 
-.headBanner{
+.headBanner .headNav{
     display: flex;
     justify-content: right;
-    background-color: aquamarine;
-    
+    align-items: center;
+    background-color: blue;    
     
 }
 
-.headNav{
-    padding-right: 2vw;
+.headnav-left{
+    position: absolute;
+    left: 2rem;
 }
+
 .headNav{
-    height: 3vh;  
+    padding-right: 2rem;
+}
+
+
+
+.headNav{
+    height: 4vh;  
     top: 0px;
     right: 0px;
 }
 
 
-img{
-    max-width: 100%;
-    max-height: 100%;
-    display: inline-block; /* remove extra space below image */
+.headNav-element{
+    font-size: larger;
+    list-style: none;
+    margin-left: .5rem;
+    color: white;
     
 }
 
 
+
 .pubContainer, .pub {
-    height: 20vh;    
+    height: 16vh;    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,52 +57,85 @@ img{
 
 .pub{
     border-color: bisque;
-    width: 80%;
-    height: 80%;
-    background-color: blue;
-    border-style: groove;
+    width: 100%;    
+    height: 98%;    
+    background-image: linear-gradient(to left, rgba(0,0,255,.6), rgba(0,0,255,1))
 }
 
-.wrapper {
+header {
     display: flex;
-    align-items: center;
-    height: 8vh;
-    background: paleturquoise;    
+    align-items: center;           
+    background-color: red;    
+    height: 5vh;
+    padding-left: 2rem;
+    
+    
 }
 
-.navElement{    
-    list-style: none;
-    color: black;
-   /* text-align: center;  */
-    padding: 14px;
-    text-decoration: none;  
-    margin: 0;
-    padding: 0;
+header .nav-logo{
+    height: 3vh ;    
+    font-size: larger;
+    font-weight: bolder;
+}
+
+header nav{    
+    position: absolute;
+    right: 2rem;
+}
+
+header .nav-element{
+    margin: .5rem;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.nav-logo{   
+    font-size: 1.7rem;
+    font-weight: bolder;
+    letter-spacing: .3rem;
+}
+
+.nav-element:hover{
+    background-color: #111;
+    color: white;
+    
+}
+/*
+.navSecond{
+    padding-right: 2vw;
+    
+}
+
+
+.navSecond{
+    margin-left: auto;    
      
 
 }
 
-.navFirst {
-    padding-left: 2vw;
-}
 
-.navSecond{
-    padding-right: 2vw;
-}
-
-
-.navSecond{
-    margin-left: auto;  
-    
-
-}
-
-
-li{
+.liElement,  a {
     display: inline;
+    padding-left: 1vw;
+    text-decoration: none;
+    height: inherit;
+    background-color: antiquewhite;
+    height: 100%;
+    
     
 }
+*/
 
+.liElement a:hover{
+    background-color: #111;
+    color: white;
+    height: 100%;
+}
+
+.active {
+    background-color: red;
+  }
 
 .mainWrap{
     display: flex;
@@ -119,7 +164,7 @@ li{
 
 }
 
-.gridMain{
+.gridMain {
     position: relative;
     max-width: 100%;
     margin: 0 auto;
@@ -127,7 +172,7 @@ li{
 
 .gridMain img {vertical-align: middle;}
 
-.gridMain .imgCaption {
+.gridElement .imgCaption {
     position: absolute;
     bottom: 0;
     background: rgb(0, 0, 0); /* Fallback color */
@@ -141,6 +186,8 @@ li{
     grid-column: 1 / span 2;
     grid-row: 1 / span 2;
     background-color: blue;
+    
+   
 }
 
 .imgNews{
