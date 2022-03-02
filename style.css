@@ -72,7 +72,7 @@ header {
     
 }
 
-header .nav-logo{
+header .left-nav{
     height: 3vh ;    
     font-size: larger;
     font-weight: bolder;
@@ -90,7 +90,7 @@ header .nav-element{
     font-size: 1.2rem;
 }
 
-.nav-logo{   
+.left-nav{   
     font-size: 1.7rem;
     font-weight: bolder;
     letter-spacing: .3rem;

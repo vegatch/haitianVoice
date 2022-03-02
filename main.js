@@ -24,13 +24,22 @@ fetch('news.json')
         let myTitle = document.getElementById("news-feed");
         let  myBody = document.getElementById("news-body");
         for(let i = 0; i < data.length; i++){
-            let div = document.createElement("ul");
+            let ul = document.createElement("ul");
             let li = document.createElement("li");
-            div.innerHTML = data[i].firstName;
+            ul.innerHTML = data[i].firstName;            
             li.innerHTML = data[i].lastName;
+            
+            
 
-            myTitle.appendChild(div);
-            myBody.appendChild(li);
+            //li.insertAdjacentText('afterend', data[i].lastName);
+            //div.insertBefore(data[i].lastName, data[i].lastName);
+           // myTitle.appendChild(ul);
+            //myBody.appendChild(li);
+
+            myTitle.appendChild(myBody);
+            
+           // myTitle.appendChild(ul).insertBefore(myBody.appendChild(li));
+
         }
     }
           
@@ -46,3 +55,40 @@ fetch('news.json')
         }
 
 */
+
+
+let navRight = function navigation(name) {
+    let a = document.createElement('a');
+    a.textContent = name;
+    a.className='nav-element';
+    a.setAttribute('href','#'+ name)
+    return a;
+}
+
+// get the nav  menu
+const menu = document.querySelector('#right-nav');
+// add navigation element
+menu.appendChild(navRight('Home'));
+menu.appendChild(navRight('Haiti'));
+menu.appendChild(navRight('World'));
+menu.appendChild(navRight('Society'));
+menu.appendChild(navRight('Flashback'));
+
+console.log(menu);
+
+
+let navleft = function navigation(name) {
+    let a = document.createElement('a');
+    a.textContent = name;
+    a.className='nav-element nav-logo';
+    a.setAttribute('href','#home')
+    return a;
+}
+
+// get the nav  menu
+const menuLeft = document.querySelector('#left-nav');
+// add navigation element
+menuLeft.appendChild(navleft('Haitian News'));
+
+
+console.log(menuLeft);
