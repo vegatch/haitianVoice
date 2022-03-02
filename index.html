@@ -10,6 +10,8 @@
             type = "image/x-icon">
     <link rel="stylesheet" href="./style.css">
     <script src="https://kit.fontawesome.com/1951a1a085.js" crossorigin="anonymous"></script>           
+    <script src="./main.js" defer></script>
+
 </head>
 <body>
     <div class="headBanner">        
@@ -53,7 +55,7 @@
         <div class="gridContainer">
             <div class="gridMain gridElement">
                 <img class="imgNews" src="https://images.thewest.com.au/publication/C-5179004/99391f1ce4882160aa48c60e7e94ecaca0177d00-16x9-x0y0w1280h720.jpg?imwidth=810&impolicy=wan_v3" alt="Ariel Henry">
-                <div class="imgCaption">
+                <div class="newsCaption imgCaption">
                     <p>Haitian Prime Minister Ariel refuses to step down before the general election</p>
                 </div>              
             </div>
@@ -81,7 +83,16 @@
                     <p>Izo 5 second think in being the next Haitian President and has already appointed a strategist for his campaign</p>
                 </div> 
             </div>
+                
         </div>
+    </div>
+    <!--News feed-->
+    <div>
+        
+        <ul id="news-feed">
+            <li id="news-body"></li>
+            
+        </ul>
     </div>
     
 </body>

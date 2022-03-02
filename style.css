@@ -190,6 +190,9 @@ header .nav-element{
    
 }
 
+.newsCaption {
+    font-size: 1.7rem;
+}
 .imgNews{
     object-fit: cover;
     height: 100%;
