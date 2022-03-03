@@ -11,11 +11,17 @@
     font-family: 'Roboto', Courier, monospace;
 }
 
+#banner-feed-l, #banner-feed-r, .headBanner, .headNav{
+    background-color: #0000cd;  
+    color: #FFFFFF;
+    text-shadow: 4px 3px 0px #7A7A7A;  
+}
+
 .headBanner .headNav{
     display: flex;
     justify-content: right;
     align-items: center;
-    background-color: blue;    
+    
     
 }
 
@@ -55,11 +61,45 @@
     
 }
 
-.pub{
-    border-color: bisque;
+.pub-frame {
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pub{    
     width: 100%;    
     height: 98%;    
     background-image: linear-gradient(to left, rgba(0,0,255,.6), rgba(0,0,255,1))
+}
+
+.txt-frame, .img-frame{
+    width: 50%;
+    margin-left: 1rem;
+
+}
+.img-frame > .img-pub{
+    
+    height: 6rem;
+    width: 6rem;
+    object-fit: cover;
+    border-radius: 50%;
+    float: right;    
+  
+}
+
+
+
+.pub-frame > p{
+    float: right;
+}
+
+.pub-title{
+    font-size: larger;
+    letter-spacing: .15rem;
+    
+    
+
 }
 
 header {
@@ -72,6 +112,10 @@ header {
     
 }
 
+header{
+    color: #FFFFFF;
+    text-shadow: 4px 3px 0px #7A7A7A;
+}
 header .left-nav{
     height: 3vh ;    
     font-size: larger;
@@ -180,28 +224,42 @@ header .nav-element{
     display: flex;
     justify-content: center;
 }
+.body-frame{
+    display: block;   
+    width: 80vw; 
+}
 
-.News-list{
-    margin-top: 1rem;
-    width: 80vw;
+.News-list, .banner-news{
+    margin-top: 1rem;   
     display: flex;
     column-gap: 10px;
 }
 
-.child{
+.child, .banner-child{
     
-        height: 60 vh;
-        background: yellow;
+        height: 60 vh;        
         text-align: default;
         box-sizing: border-box;
         border: 1px solid red;
         padding:2rem;
 }
 
-#news-feed{
+#news-feed, #banner-feed-l{
     width: 84%;
 }
 
-#haitian-voice{
+#haitian-voice, #banner-feed-r{
     width: 26%;
 }
+#banner-feed-l, #banner-feed-r{
+    height: 1vh;
+    display: flex;
+    align-items: center;    
+    
+}
+
+.fa-clock{    
+    font-size: 1.5rem;
+    margin-right:1.3rem;
+}
+
